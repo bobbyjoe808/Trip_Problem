@@ -2,9 +2,11 @@
 # pack the most of the 'love' unit possible while staying under or at 'max_weight' weight units
 
 from random import randint
+import os
+
 
 ### NOTICE: Put path of 'iteam_tags variable 'path' ###
-path = r''
+path = (os.path.dirname( os.path.realpath(__file__)) +'\iteam_tags.txt')
 
 max_weight = 200
 
@@ -101,7 +103,7 @@ def brute(iteams, tags, alt=False, poss=False):
     best_pack = []
     
     if poss == False:
-        poss_iteams = int(input('how many iteams would you like to cheack with >> '))
+        poss_iteams = int(input('how many iteams would you like to check with >> '))
         poss = get_all(poss_iteams)
 
     x = 0
@@ -158,6 +160,7 @@ def cross_over(pos):
     return pos
 
 ###Use Genetic algorithum to find best possability ###
+
 def evole(iteams, tags):
     # use previous def to cross-over iteam true/false to get new versions
     #get amoount of possabiliys and run throught cross_over to get different versions
