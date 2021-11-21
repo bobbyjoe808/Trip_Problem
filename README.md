@@ -12,5 +12,5 @@ You can eaither use 'evolution' which uses a genetic algorithum to find best pos
 
 When you find the amount of tags you check with your using the first amount of that number to do the problem with. 
 
-## The solution is in tha binary list where each number repersents an iteam in order and wether its included in the best soulution or not. 
-   It also inclueds the best love value and the total weight of all the iteams. ##
+The solution is in tha binary list where each number repersents an iteam in order and wether its included in the best soulution or not. 
+It also inclueds the best love value and the total weight of all the iteams.
